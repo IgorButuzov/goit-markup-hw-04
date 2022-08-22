@@ -130,6 +130,11 @@ margin-left: 93px;
     margin-left: auto;
     gap: 50px;
 }
+.svg-icon{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
 .header-mail,
 .header-tel{
     font-style: normal;
