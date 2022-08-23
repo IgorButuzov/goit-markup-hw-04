@@ -140,18 +140,14 @@ margin-left: 93px;
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: #757575;
     cursor: pointer;
 }
 .headertel-icon{
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: #757575;
     cursor: pointer;
 }
-
-
 
 .header-mail,
 .header-tel{
@@ -163,7 +159,7 @@ margin-left: 93px;
     color: var(--p-color);
     padding-top: 32px;
     padding-bottom: 32px;
-  
+    fill: currentColor;
 }
 .header-container{
     display: flex;
@@ -182,7 +178,6 @@ margin-left: 93px;
     margin-right: auto;
     background: rgba(47, 48, 58, 0.4);
     background-image: url('../images/herosq.jpg');
-    
     padding: 200px 0;
     
 }
@@ -292,6 +287,7 @@ margin-left: 93px;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 .specialist {
     width: 270px;
@@ -305,6 +301,39 @@ margin-left: 93px;
 }
 .specialists{
     display: flex;
+}
+.specialistlink-button{
+    display: block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border: transparent;
+    border-radius: 50px;
+    justify-content: center;
+    cursor: pointer;
+}
+.specialistlink:hover,
+.specialistlink:focus,
+.specialistlink-button:hover,
+.specialistlink-button:focus{
+    background-color: #2196F3;
+    fill: #FFFFFF;
+    
+}
+.specialistlink{
+    fill: #757575;
+}
+.specialistbutton-item:not(:first-child) {
+    margin-left: 10px;
+}
+.specialistlink-icon{
+    width: 20px;
+    height: 20px;
+}
+.specialistlink-items{
+    display: flex;
+    justify-content: center;
 }
 
 .example-items{
@@ -354,6 +383,89 @@ margin-left: 0;
     color: var(--textwhite-color);
 }
  
+.client-items{
+    display: flex;
+    justify-content: center;
+}
+.client-item:not(:first-child) {
+    margin-left: 30px;
+}
+.client-button{
+    width: 170px;
+    height: 92px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: #ffffff;
+    fill: #AFB1B8;
+    cursor: pointer;
+}
+.client-button:hover{
+    border: 1px solid #2196F3;
+    fill: #2196F3;
+}
+.firstclient-icon{
+    width: 41px;
+    height: 47px;
+}.secondclient-icon{
+    width: 40px;
+    height: 52px;
+}
+.thirdclient-icon{
+    width: 43px;
+    height: 41px;
+}
+.fourthclient-icon{
+    width: 84px;
+    height: 41px;
+}
+.fifthclient-icon{
+    width: 63px;
+    height: 45px;
+}
+.sixthclient-icon{
+    width: 94px;
+    height: 44px;
+}
+.footer-conteiner{
+    display: flex;
+}
+.footer-contacts{
+    display: block;
+}
+.footer-enjoy{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 70px;
+    margin-top: 12px;
+
+}
+.footer-icons{
+    display: flex;
+    margin-top: 20px;
+}
+.footerlink-button{
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border: transparent;
+    border-radius: 50px;
+    fill: #FFFFFF;
+    cursor: pointer;
+}
+.footerlink-button:hover,
+.footerlink-button:focus {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+.footertlink-icon{
+    width: 20px;
+    height: 20px;
+}
 .footer{
     background-color: #2F303A;
     padding: 60px 0;
