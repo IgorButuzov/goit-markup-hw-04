@@ -302,34 +302,32 @@ margin-left: 93px;
 .specialists{
     display: flex;
 }
-.specialistlink-button{
+.specialistlink{
     display: block;
     padding: 12px;
     width: 44px;
     height: 44px;
-    background-color: #ffffff;
     border: transparent;
     border-radius: 50px;
+    background-color: #ffffff;
     justify-content: center;
     cursor: pointer;
+    fill: #AFB1B8;
 }
+
 .specialistlink:hover,
-.specialistlink:focus,
-.specialistlink-button:hover,
-.specialistlink-button:focus{
+.specialistlink:focus{
     background-color: #2196F3;
     fill: #FFFFFF;
-    
 }
-.specialistlink{
-    fill: #757575;
-}
+
 .specialistbutton-item:not(:first-child) {
     margin-left: 10px;
 }
 .specialistlink-icon{
     width: 20px;
     height: 20px;
+    
 }
 .specialistlink-items{
     display: flex;
@@ -448,23 +446,27 @@ margin-left: 0;
     display: flex;
     margin-top: 20px;
 }
-.footerlink-button{
+.footer-icon{
     width: 44px;
     height: 44px;
+    padding: 12px;
     background: rgba(255, 255, 255, 0.1);
     border: transparent;
     border-radius: 50px;
     fill: #FFFFFF;
     cursor: pointer;
 }
-.footerlink-button:hover,
-.footerlink-button:focus {
+.footer-icon:not(:first-child) {
+    margin-left: 10px
+}
+.footer-icon:hover,
+.footer-icon:focus {
     background-color: #2196F3;
-    fill: #FFFFFF;
 }
 .footertlink-icon{
     width: 20px;
     height: 20px;
+    fill: #FFFFFF;
 }
 .footer{
     background-color: #2F303A;
