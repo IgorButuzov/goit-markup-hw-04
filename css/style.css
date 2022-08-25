@@ -4,11 +4,11 @@
     --hover-color: #2196F3;
     --textwhite-color: #ffffff;
     --backgroundfilter-color: #EEEEEE;
-       
-    --noname-color: #000000;
+    --footerbgc-color: #2F303A;
+    
     --noname-color: #F5F4FA;
     --noname-color: #FFFFFF 60%;
-    --noname-color: #2F303A;
+    --noname-color: #000000;
     --headerline-color: #ECECEC;
 }
 
@@ -111,7 +111,7 @@ margin-left: 93px;
     color: var(--hover-color);
 }
 .current{
-   color: #2196F3;
+   color: var(--hover-color);
 }
 
 .headermail-icon:hover,
@@ -140,13 +140,13 @@ margin-left: 93px;
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    cursor: pointer;
+    fill: currentColor;
 }
 .headertel-icon{
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    cursor: pointer;
+    fill: currentColor;
 }
 
 .header-mail,
@@ -159,7 +159,8 @@ margin-left: 93px;
     color: var(--p-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    fill: currentColor;
+    display: flex;
+    align-items: center;
 }
 .header-container{
     display: flex;
@@ -176,8 +177,12 @@ margin-left: 93px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(47, 48, 58, 0.4);
-    background-image: url('../images/herosq.jpg');
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/herosq.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 200px 0;
     
 }
@@ -198,7 +203,7 @@ margin-left: 93px;
 
 .button{
     font-family: inherit;
-    background: #2196F3;     
+    background: var(--hover-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -215,7 +220,7 @@ margin-left: 93px;
 
 .button:hover,
 .button:focus{
-    background: #188CE8;;
+    background: var(--hover-color);
 }
 
 .benefits-titles{
@@ -250,11 +255,14 @@ margin-left: 93px;
     height: 120px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .benefits-icon{
     width: 70px;
     height: 70px;
-    margin: 25px 100px;
+    
 
 }
 .ourteamtext{
@@ -292,7 +300,7 @@ margin-left: 93px;
 .specialist {
     width: 270px;
     text-align: center;
-    background: #FFFFFF;
+    background: var(--textwhite-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -303,22 +311,20 @@ margin-left: 93px;
     display: flex;
 }
 .specialistlink{
-    display: block;
-    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-    border: transparent;
     border-radius: 50px;
-    background-color: #ffffff;
-    justify-content: center;
     cursor: pointer;
-    fill: #AFB1B8;
+    color: #AFB1B8;
 }
 
 .specialistlink:hover,
 .specialistlink:focus{
-    background-color: #2196F3;
-    fill: #FFFFFF;
+    background-color: var(--hover-color);
+    color: var(--textwhite-color);
 }
 
 .specialistbutton-item:not(:first-child) {
@@ -327,7 +333,7 @@ margin-left: 93px;
 .specialistlink-icon{
     width: 20px;
     height: 20px;
-    
+    fill: currentColor;
 }
 .specialistlink-items{
     display: flex;
@@ -343,6 +349,13 @@ width: 370px;
 margin-left: 30px;
 margin-bottom: 30px;
 }
+.example-hover:hover,
+.example-hover:focus{
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .example:nth-child(3n+1){
 margin-left: 0;
 }
@@ -357,6 +370,7 @@ margin-left: 0;
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+    
 }
 .filterbutton-item:not(:first-child) {
     margin-left: 8px;
@@ -374,59 +388,45 @@ margin-left: 0;
     border-radius: 4px;
     border: 0;
     padding: 6px 22px;
+    
 }
 .filterbutton:hover,
 .filterbutton:focus{
-    background-color: #2196F3;
+    background-color: var(--hover-color);
     color: var(--textwhite-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
  
 .client-items{
     display: flex;
-    justify-content: center;
 }
 .client-item:not(:first-child) {
     margin-left: 30px;
 }
 .client-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
-    width: 170px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: var(--textwhite-color);
     fill: #AFB1B8;
-    cursor: pointer;
 }
 .client-button:hover{
-    border: 1px solid #2196F3;
-    fill: #2196F3;
+    border: 1px solid var(--hover-color);
+    fill: var(--hover-color);
 }
-.firstclient-icon{
-    width: 41px;
-    height: 47px;
-}.secondclient-icon{
-    width: 40px;
-    height: 52px;
-}
-.thirdclient-icon{
-    width: 43px;
-    height: 41px;
-}
-.fourthclient-icon{
-    width: 84px;
-    height: 41px;
-}
-.fifthclient-icon{
-    width: 63px;
-    height: 45px;
-}
-.sixthclient-icon{
-    width: 94px;
-    height: 44px;
+.client-icon{
+    width: 106px;
+    height: 60px;
 }
 .footer-conteiner{
     display: flex;
+    align-items: baseline;
 }
 .footer-contacts{
     display: block;
@@ -437,7 +437,7 @@ margin-left: 0;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--textwhite-color);
     margin-left: 70px;
     margin-top: 12px;
 
@@ -451,9 +451,8 @@ margin-left: 0;
     height: 44px;
     padding: 12px;
     background: rgba(255, 255, 255, 0.1);
-    border: transparent;
     border-radius: 50px;
-    fill: #FFFFFF;
+    fill: var(--textwhite-color);
     cursor: pointer;
 }
 .footer-icon:not(:first-child) {
@@ -461,15 +460,15 @@ margin-left: 0;
 }
 .footer-icon:hover,
 .footer-icon:focus {
-    background-color: #2196F3;
+    background-color: var(--hover-color);
 }
 .footertlink-icon{
     width: 20px;
     height: 20px;
-    fill: #FFFFFF;
+    fill: var(--textwhite-color);
 }
 .footer{
-    background-color: #2F303A;
+    background-color: var(--footerbgc-color);
     padding: 60px 0;
 }
 .footer-logoweb{
